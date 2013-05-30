@@ -1,0 +1,62 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require normalize
+ *= require_self
+ *= require_tree . 
+*/
+
+$base_color: #ffa62e;
+
+body {
+  background: #000 image-url("back2.png") repeat-x scroll;
+  font-family: "Courier New", monospace;
+  color: $base_color;
+}
+
+a, a:visited {
+  color: darken($base_color, 10%);
+}
+
+header {
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#content {
+  width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid $base_color;
+  background-color: #231e1f;
+}
+
+.pagination {
+  list-style-type: none;
+  li {
+    display: inline;
+  }
+}
+
+#rabbit {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#termDiv {
+  font-size: 14px;
+  table {
+    width: 100%;
+  }
+}
+
+.termReverse {
+  background-color: $base_color;
+  color: #231e1f;
+}

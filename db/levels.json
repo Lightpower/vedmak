@@ -1,0 +1,41 @@
+{
+  "ac9189": {
+    "motd": "Welcome to the arzamas-16 server\nUsage:\nls -- list directory contents\ncat <file> -- concatenate and print file by name <file>\nexit -- leave current session",
+    "ls": "readme.txt",
+    "cat readme.txt": "Hello! This is deprecated nube account. For more access use login lamer and password qwerty"
+  },
+  "12dea9": {
+    "motd": "Welcome! If you need any help - just call it",
+    "help": "ls -- list directory contents\ncat <file> -- concatenate and print file by name <file>\nexit -- leave current session",
+    "ls": ".bash_profile",
+    "cat .bash_profile": "ls\ncd work/node1\nls\nvim .\nchmod +x bin/start\nbin/start\nps axu | grep start\nkill -9 9834\nCREATE USER user WITH PASSWORD 12user21;\nvsql\nbin/start\nkill -9 1042\ncd ...\nrm -rf work\nexit"
+  },
+  "a975a0": {
+    "motd": "Welcome",
+    "help": "ls -- list directory contents\ncat <file> -- concatenate and print file by name <file>\nexit -- leave current session",
+    "ls": "geralt.log",
+    "cat geralt.log": "Started POST for 127.0.0.1 at 07:13:40\nProcessing by Sessions#create\nauthenticity_token=lTu13JkaqnKmDWXfZg2mjyl0NejkwJCIdOwv3H0Apmk\nRedirected\nCompleted in 208ms\nStarted GET for 127.0.0.1 at 07:13:41\nServed asset - 304 Not Modified (0ms)\nStarted GET 'http://arzamas-16.org/net/files/9_codes.png' for 127.0.0.1 at 07:13:45\nCompleted 404 Not found in 4ms\nStarted GET for 127.0.0.1 at 07:13:53\nRendered document (0.8ms)\nCompleted 200 OK in 158ms"
+  },
+  "199d65b": {
+    "motd": "Hi! Training mode is activated. Are you ready to fight?",
+    "help": "yes -- fight!"
+  },
+  "ae7f7d3": {
+    "motd": "Nice to see you again ^__^",
+    "help": "ls -- list directory contents\nls <dir> -- list chosen directory contents\ncat <file> -- concatenate and print file by name <file>\nexit -- leave current session",
+    "ls": "etc/",
+    "ls etc": "other/",
+    "ls etc/other": "loginpassword",
+    "ls etc/": "other/",
+    "ls etc/other/": "loginpassword",
+    "cat etc/other/loginpassword": "File is moved to another virtual machine"
+  },
+  "d6a9ff7": {
+    "motd": "Hello, Master!",
+    "help": "ls -- list directory contents\nls <dir> -- list chosen directory contents\ncat <file> -- concatenate and print file by name <file>\nexit -- leave current session",
+    "ls": "source/",
+    "ls source": "main.cpp",
+    "ls source/": "main.cpp",
+    "cat source/main.cpp": "int main()\n{\nint a[2][5] = {{52433,5467,36181,38225,38097},{55765,34069,40348,21776,56528}};\nfor(int j=0; j<5; ++j){\nfor(int i=0; i<33;++i)\nprintf(\"%s\",(int)pow((double)2,(double)(i % 16))& a[i/16][j] ? \"\x23\" : \"\x20\");printf(\"\n\");}\nreturn 0;\n}"
+  }
+}

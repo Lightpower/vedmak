@@ -1,0 +1,12 @@
+--- 
+:name: matrix-dr
+:repo: git@aejis.eu:matrix-dr.git
+:ruby: "1.9"
+:stages: 
+  :master: 
+    :server: matrix.smile-team.info
+    :domain: matrix.smile-team.info
+    :environment: production
+    :app_workers: 1
+:dbms: []
+

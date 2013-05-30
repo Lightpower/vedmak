@@ -1,0 +1,32 @@
+upstream matrix-dr_master {
+  server unix:<%= File.join(current_path, 'tmp/sockets/unicorn.sock') %> fail_timeout=0;
+}
+
+server {
+  server_name www.matrix.smile-team.info;
+  rewrite ^(.*) http://matrix.smile-team.info$1 permanent;
+}
+
+server {
+  listen 80;
+  server_name matrix.smile-team.info;
+
+  proxy_set_header  Host            $host;
+  proxy_set_header  X-Real-IP       $remote_addr;
+  proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_redirect    off;
+
+  <% Dir.chdir(File.join(current_path, 'public')) do %>
+  <% Dir.glob('*').each do |pubdir| %>
+  location /<%= pubdir + (File.directory?(pubdir) ? '/' : '') %> {
+    root <%= File.join(current_path, 'public') %>;
+  }
+  <% end %>
+  <% end %>
+
+  error_page 500 502 503 504 /500.html;
+
+  location / {
+    proxy_pass http://matrix-dr_master;
+  }
+}
