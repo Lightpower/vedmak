@@ -8,10 +8,9 @@ gem 'rails', '3.1.1'
 gem 'pg'
 
 gem 'simple_form'
-
 gem 'unicorn'
-
 gem 'devise'
+gem 'execjs'
 
 group :development, :test do
   gem 'sqlite3'

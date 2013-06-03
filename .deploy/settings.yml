@@ -1,11 +1,11 @@
 --- 
-:name: matrix-dr
-:repo: git@aejis.eu:matrix-dr.git
+:name: vedmak
+:repo: git@Lightpower:vedmak.git
 :ruby: "1.9"
 :stages: 
   :master: 
-    :server: matrix.smile-team.info
-    :domain: matrix.smile-team.info
+    :server: net.arzamas-16.org
+    :domain: net.arzamas-16.org
     :environment: production
     :app_workers: 1
 :dbms: []

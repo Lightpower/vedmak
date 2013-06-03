@@ -1,15 +1,15 @@
-upstream matrix-dr_master {
+upstream vedmak_master {
   server unix:<%= File.join(current_path, 'tmp/sockets/unicorn.sock') %> fail_timeout=0;
 }
 
 server {
-  server_name www.matrix.smile-team.info;
-  rewrite ^(.*) http://matrix.smile-team.info$1 permanent;
+  server_name www.net.arzamas-16.org;
+  rewrite ^(.*) http://net.arzamas-16.org$1 permanent;
 }
 
 server {
   listen 80;
-  server_name matrix.smile-team.info;
+  server_name net.arzamas-16.org;
 
   proxy_set_header  Host            $host;
   proxy_set_header  X-Real-IP       $remote_addr;
@@ -27,6 +27,6 @@ server {
   error_page 500 502 503 504 /500.html;
 
   location / {
-    proxy_pass http://matrix-dr_master;
+    proxy_pass http://vedmak_master;
   }
 }
