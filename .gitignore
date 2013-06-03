@@ -6,7 +6,6 @@ capybara-*.html
 /.bundle
 /vendor/bundle
 /log/*
-/tmp/*
 /db/*.sqlite3
 /public/system/*
 /public/assets/*
@@ -19,3 +18,5 @@ rerun.txt
 pickle-email-*.html
 .idea
 .ruby-*
+/tmp/cache
+/tmp/cache/*
