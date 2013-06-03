@@ -11,6 +11,7 @@ gem 'simple_form'
 gem 'unicorn'
 gem 'devise'
 gem 'execjs'
+gem 'therubyracer'
 
 group :development, :test do
   gem 'sqlite3'
