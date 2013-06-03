@@ -1,4 +1,4 @@
-Matrix::Application.routes.draw do
+Vedmak::Application.routes.draw do
 
   devise_for :users
 
@@ -10,6 +10,11 @@ Matrix::Application.routes.draw do
   post '/terminal/command' => 'terminal#command'
   get  '/terminal/*p'      => redirect("/terminal")
   get  '/terminal'         => 'terminal#index'
+
+  get  'proxy'             => 'proxy#show'
+  post 'proxy'             => 'proxy#show'
+
+
 
   get '/d-r-106-dir/d.29-10-11/s.11-2/tsk.ver-1.0/lnk-type.tsk-contain-lnk/t.6-south-part/type-real.1-2-1/Alex-Key-22-10-11/pp-2.pp-3/crypt.lvl-1' => 'pages#crypt'
   # The priority is based upon order of creation:

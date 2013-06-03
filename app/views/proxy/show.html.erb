@@ -1,0 +1,21 @@
+<% if flash[:error].present? %>
+	<%= content_tag(:div, flash[:error], class: 'error', id: 'flash') %>
+<% end %>
+
+<% if current_user %>
+	<h1>Прокси серверы - уровень <%= @level %></h1>
+
+	<%= form_for :proxy do |f| %>
+	  <%= hidden_field_tag(:old_proxies, @old_proxies) if @old_proxies.present? %>
+
+		<%= f.label(:data, 'Введите IP-адрес прокси-сервера:') %>
+		<%= f.text_field(:data) %>
+	<% end %>
+
+	<% if @url.present? %>
+	  <p>
+	    Прокси-сервер <%= @old_data %> найден<br>
+	  </p>
+    <iframe id="proxy" height="600" width="790" src="<%= @url %>"></iframe>
+	<% end %>
+<% end %>

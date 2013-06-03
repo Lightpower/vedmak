@@ -60,3 +60,12 @@ h1 {
   background-color: $base_color;
   color: #231e1f;
 }
+
+div.error {
+  background-color: red;
+  color:  black;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  margin:  0 auto;
+}

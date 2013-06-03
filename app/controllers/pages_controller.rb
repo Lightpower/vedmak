@@ -65,6 +65,9 @@ class PagesController < ApplicationController
 
     def pages
       pages = Page.order('id DESC')
+      pages[0].id = 3
+      pages[1].id = 2
+      pages[2].id = 1
       if current_user.blank?
         [pages.last]
       elsif current_user.email == 'geralt@ukr.net'

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Matrix::Application.load_tasks
+Vedmak::Application.load_tasks
