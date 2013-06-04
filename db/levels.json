@@ -25,7 +25,7 @@
     "help": "ls -- list directory contents\nls <dir> -- list chosen directory contents\ncat <file> -- concatenate and print file by name <file>\nexit -- leave current session",
     "ls": "etc/",
     "ls etc": "other/",
-    "ls etc/other": "loginpassword",
+    "ls etc/other": "loginpassword.errors",
     "ls etc/": "other/",
     "ls etc/other/": "loginpassword.errors",
     "cat etc/other/loginpassword.errors": "login programer woot\nLogin or password are incorrect\nlogin programmer woot\nLogin or password are incorrect\nlogin programmer wOOt\nnLogin or password are incorrect"
@@ -36,6 +36,6 @@
     "ls": "source/",
     "ls source": "main.cpp",
     "ls source/": "main.cpp",
-    "cat source/main.cpp": "int main()\n{\nint a[2][5] = {{52433,5467,36181,38225,38097},{55765,34069,40348,21776,56528}};\nfor(int j=0; j<5; ++j){\nfor(int i=0; i<33;++i)\nprintf(\"%s\",(int)pow((double)2,(double)(i % 16))& a[i/16][j] ? \"\x23\" : \"\x20\");printf(\"\n\");}\nreturn 0;\n}"
+    "cat source/main.cpp": "int main()\n{\nint a[2][5] = {{52433,5467,36181,38225,38097},{55765,34069,40348,21776,56528}};\nfor(int j=0; j<5; ++j){\nfor(int i=0; i<33;++i)\nprintf(\"%%s\",(int)pow((double)2,(double)(i %% 16))& a[i/16][j] ? \"\\x23\" : \"\\x20\");printf(\"\\n\");}\nreturn 0;\n}"
   }
 }
