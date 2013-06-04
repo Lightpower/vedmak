@@ -27,8 +27,8 @@
     "ls etc": "other/",
     "ls etc/other": "loginpassword",
     "ls etc/": "other/",
-    "ls etc/other/": "loginpassword",
-    "cat etc/other/loginpassword": "File is moved to another virtual machine"
+    "ls etc/other/": "loginpassword.errors",
+    "cat etc/other/loginpassword.errors": "login programer woot\nLogin or password are incorrect\nlogin programmer woot\nLogin or password are incorrect\nlogin programmer wOOt\nnLogin or password are incorrect"
   },
   "d6a9ff7": {
     "motd": "Hello, Master!",
